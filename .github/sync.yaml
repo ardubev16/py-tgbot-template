@@ -8,6 +8,6 @@ group:
       - .editorconfig
       - .gitignore
       - .pre-commit-config.yaml
-      - .ruff.toml
       - LICENSE
+      - pyproject.toml
       - renovate.json
