@@ -14,5 +14,8 @@ jobs:
         uses: BetaHuhn/repo-file-sync-action@v1
         with:
           GH_PAT: ${{ secrets.GH_PAT }}
+          GIT_USERNAME: Github Actions Bot
+          GIT_EMAIL: github-actions[bot]@users.noreply.github.com
           CONFIG_PATH: .github/sync.yaml
-          REVIEWERS: ardubev16
+          ASSIGNEES: ardubev16
+          COMMIT_PREFIX: "chore(sync):"
