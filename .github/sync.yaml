@@ -1,0 +1,13 @@
+group:
+  - repos: |
+      ardubev16/carpoolerbot
+      ardubev16/lmbatbot
+      ardubev16/punbot
+    files:
+      - .dockerignore
+      - .editorconfig
+      - .gitignore
+      - .pre-commit-config.yaml
+      - .ruff.toml
+      - LICENSE
+      - renovate.json
