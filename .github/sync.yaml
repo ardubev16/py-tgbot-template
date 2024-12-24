@@ -4,7 +4,8 @@ group:
       ardubev16/lmbatbot
       ardubev16/punbot
     files:
-      - sync-config
+      - source: sync-config
+        deleteOrphaned: true
       - .dockerignore
       - .editorconfig
       - .gitignore
@@ -12,3 +13,15 @@ group:
       - .python-version
       - LICENSE
       - renovate.json
+
+ardubev16/carpoolerbot:
+  - source: Dockerfile.jinja
+    dest: Dockerfile
+    template:
+      main_cmd: carpoolerbot
+
+ardubev16/lmbatbot:
+  - source: Dockerfile.jinja
+    dest: Dockerfile
+    template:
+      main_cmd: lmbatbot
