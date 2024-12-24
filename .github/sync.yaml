@@ -4,10 +4,11 @@ group:
       ardubev16/lmbatbot
       ardubev16/punbot
     files:
+      - sync-config
       - .dockerignore
       - .editorconfig
       - .gitignore
       - .pre-commit-config.yaml
+      - .python-version
       - LICENSE
-      - pyproject.toml
       - renovate.json
