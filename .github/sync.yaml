@@ -18,10 +18,13 @@ ardubev16/carpoolerbot:
   - source: Dockerfile.jinja
     dest: Dockerfile
     template:
-      main_cmd: carpoolerbot
+      cmd: carpoolerbot
 
 ardubev16/lmbatbot:
   - source: Dockerfile.jinja
     dest: Dockerfile
     template:
-      main_cmd: lmbatbot
+      cmd: lmbatbot
+      instructions:
+        post_build:
+          - COPY ./data ./data
