@@ -24,7 +24,8 @@ ardubev16/lmbatbot:
   - source: Dockerfile.jinja
     dest: Dockerfile
     template:
-      cmd: lmbatbot
+      cmd: /app/entrypoint.sh
       instructions:
         post_build:
           - COPY ./data ./data
+          - COPY alembic.ini entrypoint.sh ./
