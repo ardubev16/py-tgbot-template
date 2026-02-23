@@ -21,23 +21,23 @@ repos:
       - id: codespell
 
   - repo: https://github.com/rhysd/actionlint
-    rev: v1.7.7
+    rev: v1.7.11
     hooks:
       - id: actionlint
 
   - repo: https://github.com/sqlfluff/sqlfluff
-    rev: 3.4.2
+    rev: 4.0.4
     hooks:
       - id: sqlfluff-fix
 
   - repo: https://github.com/renovatebot/pre-commit-hooks
-    rev: 41.137.0
+    rev: 43.31.6
     hooks:
       - id: renovate-config-validator
         args: [--strict]
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.13.3
+    rev: v0.15.2
     hooks:
       # Run the linter.
       - id: ruff
@@ -48,11 +48,11 @@ repos:
         types_or: [python, pyi]
 
   - repo: https://github.com/astral-sh/uv-pre-commit
-    rev: 0.8.23
+    rev: 0.10.4
     hooks:
       - id: uv-lock
 
   - repo: https://github.com/gitleaks/gitleaks
-    rev: v8.28.0
+    rev: v8.30.0
     hooks:
       - id: gitleaks
